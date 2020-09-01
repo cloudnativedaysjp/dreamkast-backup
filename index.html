@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CloudNative Days Tokyo 2020</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <div id="wrapper">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-scrolled" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" data-turbolinks="false" href="https://cndt-dreamkast.herokuapp.com/cndt2020">
+                <img class="img-fluid header_logo" src="assets/img/header_logo.png" />
+            </a>    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0 align-items-center">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-turbolinks="false" href="/cndt2020/timetables">Timetable</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/cndt2020/speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/cndt2020/contents">Events</a></li>
+                    <li class="nav-item dropdown">
+                        <li class="nav-item"><form class="button_to" method="post" action="/auth/auth0"><input class="btn btn-primary btn-block btn-sm" type="submit" value="参加申し込み / ログイン" /><input type="hidden" name="authenticity_token" value="/x5CpMGcQqLaKHyLSVAAG2zdmk5sq9Q5RdUsBRGqBRzd1DWcP0AVDCrTNjX7zKot/iRPXG9cxS0FRSbzJxSFrg==" /></form></li>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+            <div class="container">
+                <div class="btn-group track-button d-flex row" role="group">
+                    <a class="btn btn-outline-secondary track_button " track_id="1" href="index.html">Track A</a>
+                    <a class="btn btn-outline-secondary track_button " track_id="2" href="index2.html">Track B</a>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-8 movie-wrap">
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                      <iframe src="https://player.vimeo.com/video/447741118?autoplay=1&loop=0&autopause=0" id="video" frameborder="0"  allow="autoplay; fullscreen" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                    <div id="track_information">
+                      <h3 id="title">タイトル</h3>
+                      <div id="time">時間</div>
+                      <div id="speakers">発表者</div>
+                      <div id="abstract">概要</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 ">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a href="#chat" class="nav-link active" data-toggle="tab">チャット</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#slido" class="nav-link" data-toggle="tab">質問</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#discord" class="nav-link" data-toggle="tab">Discord</a>
+                      </li>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <iframe src="https://vimeo.com/live-chat/447741118" id="chat" class="tab-pane active" frameborder="0" style="min-height: 560px; width: 100%"></iframe>
+                      <iframe src="https://app.sli.do/event/erd5t5aa?section=38d1dcb3-551c-4306-b4ca-309eb38e78c4" id="slido" class="tab-pane" frameborder="0" style="min-height: 560px; width: 100%"></iframe>
+                      <iframe src="https://discordapp.com/widget?id=740163110492438558&theme=dark" id="discord" class="tab-pane" frameborder="0" style="min-height: 560px; width: 100%"  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </div>
+                  </div>
+                </div>
+             </div>
+            <footer class="bg-light py-5">
+                <div class="container"><div class="small text-center text-muted">© CloudNative Days Tokyo 2020 (Secretariat by Impress Corporation)</div></div>
+            </footer>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+            <!-- Third party plugin JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+        </div>
+    </body>
+</html>
